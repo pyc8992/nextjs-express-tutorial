@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const testCtrl = require('../controller/test');
 
-router.get('/', (req, res) => {
-  res.send('Success');
-});
+router.get('/', 
+  testCtrl.downloadFiles);
 
 module.exports = router;
